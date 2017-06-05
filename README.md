@@ -28,10 +28,25 @@ private void loadUrl(String url){
     }
 ```
 
+
+
 ## onClick
+
+
+
+
 ###### 각 버튼의 기능
+
+
+
 <br/>
+
+
+
 뒤로가기
+
+
+
 ```java
 case R.id.previous : // 뒤로가기
                 //cangoback은 마지막까지 다다랐을때 앱이 꺼지지않게하는거
@@ -40,7 +55,15 @@ case R.id.previous : // 뒤로가기
                 }
                 break;
 ```
+
+
+
+
 앞으로가기
+
+
+
+
 ```java
 case R.id.next : //앞으로가기
                 // cangoforward 마지막까지 다다랐을떄 앱이 못가게끔
@@ -49,7 +72,15 @@ case R.id.next : //앞으로가기
                 }
                 break;
 ```
+
+
+
+
 Url 이동
+
+
+
+
 ```java
 case R.id.go : // url 이동
                 String url = editText.getText().toString();
@@ -64,6 +95,10 @@ case R.id.go : // url 이동
                 break;
 ```
 
+
+
+
+
 ## WebView 내의 javascript 활성화
 이 기능이 없다면 웹뷰로 들어가도 javascript로 되어있는 부분이 로드가 안될 것이다.
 script 설정은 필수적인 기능이다.
@@ -72,11 +107,15 @@ script 설정은 필수적인 기능이다.
         webView.getSettings().setJavaScriptEnabled(true);
 ```
 
+
+
 ## 권한설정
 App내에서 인터넷(네트워크)을 사용하기 위해서는 권한(Permission)이 필요하다. 그 권한을 manifest에서 해줄 수 있다.
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
+
+
 
 
 
