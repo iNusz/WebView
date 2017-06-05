@@ -72,5 +72,13 @@ script 설정은 필수적인 기능이다.
         webView.getSettings().setJavaScriptEnabled(true);
 ```
 
+## 권한설정
+App내에서 인터넷(네트워크)을 사용하기 위해서는 권한(Permission)이 필요하다. 그 권한을 manifest에서 해줄 수 있다.
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+
+
+
 ## Android Emulator
 ![WebView.jpg](https://github.com/iNusz/WebView/blob/master/Webview.jpg)
